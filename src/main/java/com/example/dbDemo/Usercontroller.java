@@ -41,12 +41,14 @@ public class Usercontroller {
     @PostMapping("/add")
     public String addUserInfo(@RequestBody UserInfo userInfo){
         return userService.addUser(userInfo);
+
     }
 
 
     @DeleteMapping("/deleteById")
     public String deleteById(@RequestParam("id")Integer id){
         return userService.deleteUserById(id);
+
     }
 
     @PutMapping("/updateUser")
